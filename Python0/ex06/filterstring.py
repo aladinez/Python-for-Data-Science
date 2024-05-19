@@ -3,6 +3,7 @@ from ft_filter import ft_filter
 
 
 def main():
+    '''This is the main function of the module.'''
     args = sys.argv[1:]
     if len(args) != 2 or not args[1].isdigit():
         print("AssertionError: the arguments are bad")
