@@ -11,10 +11,8 @@ ft_list.append("World!")
 ft_tuple = ft_tuple[:1] + ("Morocco!",)
 
 
-# tmpList = list(ft_set)
-# tmpList[1] = "Benguerir!"
-# ft_set = set(tmpList)
-ft_set = {"Hello", "Benguerir!"}
+ft_set.remove("tutu!")
+ft_set.add("Benguerir!")
 
 
 ft_dict["Hello"] = "1337!"

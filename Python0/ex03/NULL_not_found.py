@@ -14,10 +14,9 @@ def NULL_not_found(object: any) -> int:
 }
     objType = type(object)
 
-    # handle float separately
+    # handle float separately NaN always != NaN
     if objType.__name__ == "float" and object != object:
         print(ft_dict[objType.__name__], ":" , object, objType)
-        return 0
     elif object or object == True or objType.__name__ not in ft_dict:
         print("Type not Found")
         return 1

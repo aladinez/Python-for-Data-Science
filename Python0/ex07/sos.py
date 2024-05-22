@@ -52,13 +52,11 @@ def morse_encoder(str):
 def main():
     '''This is the main function of the module.'''
     args = sys.argv[1:]
-    if len(args) != 1:
-        print("AssertionError: the arguments are bad")
-        return
     try:
+        assert len(args) == 1, "AssertionError: Bad number of arguments"
         print(morse_encoder(args[0]))
-    except KeyError:
-        print("AssertionError: the arguments are bad")
+    except (AssertionError, KeyError):
+        print("AssertionError: Bad arguments")
         return
 
 

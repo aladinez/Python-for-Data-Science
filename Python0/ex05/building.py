@@ -18,7 +18,7 @@ def main():
     """This is the main function of the module."""
     myList = sys.argv
     try:
-        assert len(myList) <= 2, "AssertionError."
+        assert len(myList) <= 2, "AssertionError: more than one argument are provided"
         if len(myList) == 1:
             print("What is the text to count?")
             user_input = input("")

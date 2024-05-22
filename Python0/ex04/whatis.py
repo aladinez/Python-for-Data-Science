@@ -12,7 +12,9 @@ def is_digit(n):
 
 myList = sys.argv
 
-if len(myList) == 2:
+if len(myList) == 1:
+    pass
+elif len(myList) == 2:
     if is_digit(myList[1]):
         if is_even(int(myList[1])):
             print("I'm Even.")
